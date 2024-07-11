@@ -1397,7 +1397,7 @@
       <li>SangheiliRangerHelmet</li>
       <li>RangerJumpBelt</li>
     </apparelTags>
-    <combatPower>100</combatPower>
+    <combatPower>50</combatPower>
   </PawnKindDef>
 
   <PawnKindDef ParentName="ElitesMilBase">
@@ -1408,7 +1408,7 @@
       <li>SangheiliMajorArmor</li>
       <li>SangheiliMajorHelmet</li>
     </apparelTags>
-    <combatPower>150</combatPower>
+    <combatPower>100</combatPower>
   </PawnKindDef>
 
   <PawnKindDef ParentName="EliteMilBase">
@@ -1419,7 +1419,7 @@
       <li>SangheiliUltraArmor</li>
       <li>SangheiliUltraHelmet</li>
     </apparelTags>
-    <combatPower>160</combatPower>
+    <combatPower>150</combatPower>
   </PawnKindDef>
 
   <PawnKindDef ParentName="EliteMilBase">
@@ -1430,13 +1430,13 @@
       <li>SangheiliSpecOpsArmor</li>
       <li>SangheiliSpecOpsHelmet</li>
     </apparelTags>
-    <combatPower>190</combatPower>
+    <combatPower>170</combatPower>
   </PawnKindDef> 
 
   <PawnKindDef ParentName="EliteMilBase">
     <defName>SangheiliHonorGuard</defName>
     <label>Honor Guard</label>
-    <combatPower>250</combatPower>
+    <combatPower>290</combatPower>
     <minGenerationAge>35</minGenerationAge>
 	<initialResistanceRange>70~85</initialResistanceRange>
     <gearHealthRange>
@@ -1508,7 +1508,7 @@
   <PawnKindDef ParentName="EliteMilBase">
     <defName>SangheiliGeneral</defName>
     <label>General</label>
-    <combatPower>200</combatPower>
+    <combatPower>300</combatPower>
     <minGenerationAge>50</minGenerationAge>
 	<initialResistanceRange>58~75</initialResistanceRange>
     <gearHealthRange>
@@ -1582,7 +1582,7 @@
   <PawnKindDef ParentName="EliteMilBase">
     <defName>SangheiliZealot</defName>
     <label>Zelaot</label>
-    <combatPower>195</combatPower>
+    <combatPower>260</combatPower>
     <minGenerationAge>25</minGenerationAge>
 	<initialResistanceRange>58~75</initialResistanceRange>
     <gearHealthRange>
