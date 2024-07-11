@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="CovReinforcedWall">
+    <defName>ReinforcedWall</defName>
+    <label>Covenant Wall</label>
+    <description>A Covenant Wall. Capable of holding up a roof.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Covenant_Walls</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>RWIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>280</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Covenant_Tech</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+    	<Steel>209</Steel>
+    </costList>
+    <building>
+      <paintable>true</paintable>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <supportsWallAttachments>true</supportsWallAttachments>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>Door</li>
+        <li>Autodoor</li>
+      </relatedBuildCommands>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.5</multiplier>
+
+      </li>
+    </damageMultipliers>
+    <researchPrerequisites>
+      <li>Covenant_Tech</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

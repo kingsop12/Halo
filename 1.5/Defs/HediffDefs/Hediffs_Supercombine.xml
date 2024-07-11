@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+    <HediffDef>
+        <defName>Cov_Supercombine</defName>
+        <label>Molecular Instability</label>
+        <description>This unit is disrupted at a molecular level if they die they will explode.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>true</isBad>        
+        <comps>
+<li Class="ModularBullet.HediffCompProperties_ExplodeOnSeverity">
+        <severityToExplode>1.00</severityToExplode>
+        <damageDef>Bomb</damageDef>
+        <damageAmount>15</damageAmount>
+        <armorPen>2.0</armorPen>
+        <radius>5</radius>
+        <isClearHediffOnExplode>true</isClearHediffOnExplode>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>900</disappearsAfterTicks>
+      </li>
+    </comps>
+    </HediffDef>
+
+</Defs>

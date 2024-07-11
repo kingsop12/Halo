@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Plasma Repeater -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Plasmar</defName>
+    <label>blue plasma</label>
+    <graphicData>
+		<texPath>Projectile/PlasmaProjectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.6</drawSize>
+    </graphicData>
+	<projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>PlasmaRepeater</defName>
+    <label>Type 51 Directed Energy Rifle</label>
+    <description>Automatic Directed Energy Weapon, capable of inflicting severe burns. Best at close/medium range.</description>
+    <graphicData>
+		<texPath>Item/Equipment/WeaponRanged/PlasmaRepeater</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>47500</WorkToMake>
+	  <Mass>3.6</Mass>
+	  <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+	  <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+	  <Plasteel>30</Plasteel>
+    </costList>
+	<recipeMaker>
+		<researchPrerequisite>Covenant_Tech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>CovenantWorkbench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<weaponTags>
+		<li>Cov_Repeater</li>
+	</weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Plasmar</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+		<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+		<burstShotCount>9</burstShotCount>
+        <range>25</range>
+        <soundCast>Repeater_Shot</soundCast>
+		<soundCastTail>GunTail_Medium</soundCastTail>
+		<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+	<!-- Energy Sword + Parent -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EnergySword</defName>
+		<label>Energy Sword</label>
+		<description>Partially ionized blades of free moving electron based gas.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Item/Equipment/WeaponRanged/EnergySword</texPath>
+                        <shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+		  <li>EnergySword</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>150000</WorkToMake>
+			<MarketValue>4500</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+		<costList>
+		  <Plasteel>50</Plasteel>
+		  <ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Covenant_Tech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>CovenantWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>EnergyStab</li>
+			</capacities>
+			<power>40</power>
+			<cooldownTime>2.45</cooldownTime>
+		  </li>
+		  <li>
+			<label>blade</label>
+			<capacities>
+			  <li>EnergySlash</li>
+			</capacities>
+			<power>40</power>
+			<cooldownTime>1.95</cooldownTime>
+		  </li>
+		</tools>
+    </ThingDef>
+  
+</Defs>

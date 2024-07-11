@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>Covenant_Armory</defName>
+		<label>Covenant Armory</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>Covenant_Tech</defName>
+		<label>Covenant Tech</label>
+		<description>Covenant armory is for races within the covenant. DO NOTE: These armors do not fit on humans.</description>
+		<baseCost>6500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Covenant_Armory</tab>
+		<prerequisites>
+			<li>PoweredArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

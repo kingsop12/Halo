@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>Ranger_PackJump</defName>
+    <label>jump pack</label>
+    <description>A covenant Jumppack.</description>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>5</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>20</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Jump</verbClass>
+        <label>jump</label>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+        <soundLanding>JumpPackLand</soundLanding>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <researchPrerequisite>Covenant_Tech</researchPrerequisite>
+      <recipeUsers>
+        <li>CovenantWorkbench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>530</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>100</Chemfuel>
+    </costList>
+    <graphicData>
+      <texPath>Apparel/Ground/RangerJumpack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+      <JumpRange>28.9</JumpRange>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <wornGraphicPath>Apparel/EliteJumpPack/EliteJumpack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+      </wornGraphicData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>RangerJumpBelt</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>Clothing</li>
+    </tradeTags>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

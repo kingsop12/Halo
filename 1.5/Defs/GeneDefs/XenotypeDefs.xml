@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <XenotypeDef>
+        <defName>SangheiliRace</defName>
+        <label>Sangheili</label>
+        <description>The Sangheili race one of the many race apart of the Covneant.</description>
+        <descriptionShort>The Sangheili race one of the many race apart of the Covneant.</descriptionShort>
+        <iconPath>UI/Xenotypes/SangXenotypeSymbol</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>SangheiliVoice</li>
+            <li>Body_Standard</li>
+            <li>SZBodySize_20</li>
+        </genes>
+    </XenotypeDef>
+
+</Defs>

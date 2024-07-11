@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>Cov_DoCovenantWork</defName>
+    <label>synthesize things</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>50</priorityInType>
+    <fixedBillGiverDefs>
+      <li>CovenantWorkbench</li>
+    </fixedBillGiverDefs>
+    <verb>synthesizing things</verb>
+    <gerund>synthesizing things at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>  
+     
+
+</Defs>

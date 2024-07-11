@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AlienRace.ThingDef_AlienRace Name="Alien_Sangheili" ParentName="Human">
+        <defName>Alien_Sangheili</defName>
+        <label>Sangheili</label>
+        <description>The Sangheili are a species of strong, proud, and intelligent warriors, as well as skilled combat tacticians. Humanoid and reptilian in body structure, they sport quadruple hinged mandibles with conical teeth as well as a binary vascular system.</description>
+        <statBases>
+                <MoveSpeed>5.0</MoveSpeed>
+                <PsychicSensitivity>1.2</PsychicSensitivity>
+                <LeatherAmount>50</LeatherAmount>
+                <MeatAmount>100</MeatAmount>
+                <ComfyTemperatureMin>-22</ComfyTemperatureMin>
+                <ComfyTemperatureMax>55</ComfyTemperatureMax>
+                <AimingDelayFactor>0.2</AimingDelayFactor>
+                <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                <InjuryHealingFactor>1.2</InjuryHealingFactor>
+                <PlantWorkSpeed>0.9</PlantWorkSpeed>
+                <PlantHarvestYield>1.09</PlantHarvestYield>
+                <MiningSpeed>0.9</MiningSpeed>
+                <MiningYield>1.08</MiningYield>
+                <ConstructionSpeed>1.2</ConstructionSpeed>
+                <ConstructSuccessChance>1.05</ConstructSuccessChance>
+                <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+                <CookSpeed>1.1</CookSpeed>
+                <FoodPoisonChance>0.2</FoodPoisonChance>
+                <DrugSynthesisSpeed>1.1</DrugSynthesisSpeed>
+                <DrugCookingSpeed>1.1</DrugCookingSpeed>
+                <MedicalTendSpeed>1.3</MedicalTendSpeed>
+                <MedicalTendQuality>1.1</MedicalTendQuality>
+                <MedicalOperationSpeed>1.2</MedicalOperationSpeed>
+                <MedicalSurgerySuccessChance>1.05</MedicalSurgerySuccessChance>
+                <CarryingCapacity>160</CarryingCapacity>
+                <MeleeDodgeChance>1.8</MeleeDodgeChance>
+                <NegotiationAbility>1.5</NegotiationAbility>
+                <TradePriceImprovement>1.2</TradePriceImprovement>
+                <SocialImpact>1.1</SocialImpact>
+                <PainShockThreshold>0.9</PainShockThreshold>
+                <MentalBreakThreshold>0.4</MentalBreakThreshold>
+                <Mass>85</Mass>
+        </statBases>
+        <alienRace>
+            <thoughtSettings>
+                <cannotReceiveThoughts Inherit="False">
+                    <li>Naked</li>
+                    <li>AteRawFood</li>
+                    <li>AteHumanlikeMeatDirect</li>
+                    <li>AteHumanlikeMeatAsIngredient</li>
+                    <li>ObservedLayingCorpse</li>
+                </cannotReceiveThoughts>
+            </thoughtSettings>
+            <generalSettings>
+                <humanRecipeImport>true</humanRecipeImport>
+                <alienPartGenerator>
+                    <borderScale>2</borderScale>
+                    <customDrawSize>( 1.25, 1.25 )</customDrawSize>
+                    <customHeadDrawSize>( 1.1, 1.1 )</customHeadDrawSize>
+                    <customPortraitDrawSize>( 1.5, 1.5 )</customPortraitDrawSize>
+                    <customPortraitHeadDrawSize>( 1.2, 1.2 )</customPortraitHeadDrawSize>
+                    <headOffset>(0, 0.03)</headOffset>
+                    <!-- <headTypes>
+                        <li>Sang_Female_Average_Normal</li>
+                        <li>Sang_Male_Average_Normal</li>
+                        <li>Sang_Child</li>
+                    </headTypes>
+                    <bodyTypes>
+                        <li>Female</li>
+                        <li>Male</li>
+                        <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+                    </bodyTypes> -->
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>1</weight>
+                                        <only>RGB(118,118,120,255)</only>
+                                    </li>
+                                </options>
+                            </first>
+                            <second Class="ColorGenerator_Single">
+                                <color>RGB(1.000, 1.000, 1.000)</color>
+                            </second>
+                        </li>
+                    </colorChannels>
+                </alienPartGenerator>
+                <disallowedTraits>
+                    <li>
+                        <defName>Greedy</defName>
+                    </li>
+                    <li>
+                        <defName>Jealous</defName>
+                    </li>
+                    <li>
+                        <defName>AnnoyingVoice</defName>
+                    </li>
+                    <li>
+                        <defName>Pyromaniac</defName>
+                    </li>
+                    <li>
+                        <defName>Wimp</defName>
+                    </li>
+                    <li>
+                        <defName>DrugDesire</defName>
+                    </li>
+                </disallowedTraits>
+                <growthAges MayRequire="Ludeon.RimWorld.Biotech">
+                    <li>7</li>
+                    <li>10</li>
+                    <li>12</li>
+                </growthAges>
+                <lovinIntervalHoursFromAge>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(20, 1)</li>
+                        <li>(28, 1)</li>
+                        <li>(350, 0.1)</li>
+                        <li>(399, 0.02)</li>
+                        <li>(400, 0)</li>
+                    </points>
+                </lovinIntervalHoursFromAge>
+                <maxDamageForSocialfight>10</maxDamageForSocialfight>
+                <reproduction MayRequire="Ludeon.RimWorld.Biotech">
+                    <femaleFertilityAgeFactor MayRequire="Ludeon.RimWorld.Biotech">
+                        <points>
+                            <li>(14, 0)</li>
+                            <li>(20, 1)</li>
+                            <li>(28, 1)</li>
+                            <li>(225, 0.5)</li>
+                            <li>(250, 0.1)</li>
+                            <li>(299, 0.02)</li>
+                            <li>(400, 0)</li>
+                        </points>
+                    </femaleFertilityAgeFactor>
+                    <maleFertilityAgeFactor MayRequire="Ludeon.RimWorld.Biotech">
+                        <points>
+                            <li>(14, 0)</li>
+                            <li>(20, 1)</li>
+                            <li>(28, 1)</li>
+                            <li>(225, 0.5)</li>
+                            <li>(250, 0.1)</li>
+                            <li>(299, 0.02)</li>
+                            <li>(400, 0)</li>
+                        </points>
+                    </maleFertilityAgeFactor>
+                </reproduction>
+            </generalSettings>
+            <styleSettings Inherit="False">
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+            </styleSettings>
+            <graphicPaths>
+                <skinShader>Cutout</skinShader>
+                <body>
+                    <path>Things/Sangheili/Body/Male/Male</path>
+                    <extendedGraphics>
+                        <BodyType For="Male">Things/Sangheili/Body/Male/Male</BodyType>
+                        <BodyType For="Female">Things/Sangheili/Body/Female/Female</BodyType>
+                        <BodyType MayRequire="Ludeon.RimWorld.Biotech" For="Baby">Things/Pawn/Humanlike/Apparel/SwaddledBaby/Swaddled_Child</BodyType>
+                        <BodyType MayRequire="Ludeon.RimWorld.Biotech" For="Child">Things/Sangheili/Body/Child/Child</BodyType>
+                    </extendedGraphics>
+                </body>
+                <head>
+                    <path>Things/Sangheili/Head/Male/Male_Average_Normal</path>
+                    <extendedGraphics>
+                        <HeadType For="Male_AverageNormal">Things/Sangheili/Head/Male/Male_Average_Normal</HeadType>
+                        <HeadType For="Female_AverageNormal">Things/Sangheili/Head/Female/Female_Average_Normal</HeadType>
+                    </extendedGraphics>
+                </head>
+            </graphicPaths>
+            <raceRestriction>
+                <xenotypeList>
+                  <li>SangheiliRace</li>
+                </xenotypeList>
+                <geneList>
+                  <li>SangheiliVoice</li>
+                  <li>SZBodySize_20</li>
+                </geneList>
+                <onlyUseRaceRestrictedXenotypes>
+					true
+                </onlyUseRaceRestrictedXenotypes>
+                <whiteGeneList> 
+                    <li>SangheiliVoice</li>
+                    <li>SZBodySize_20</li>
+                </whiteGeneList>
+                <onlyHaveRaceRestrictedGenes>
+  					true
+                </onlyHaveRaceRestrictedGenes>
+                <apparelList>
+                    <li>Undersuit</li>
+                    <li>MinorArmor</li>
+                    <li>MinorHelm</li>
+                    <li>MajorArmor</li>
+                    <li>MajorHelm</li>
+                    <li>UltraArmor</li>
+                    <li>UltraHelm</li>
+                    <li>GenArmor</li>
+                    <li>GenHelm</li>
+                    <li>SpecOpsHelm</li>
+                </apparelList>
+                <blackApparelList>
+                    <li>Apparel_VisageMask</li>
+                    <li>Apparel_BowlerHat</li>
+                    <li>Apparel_CowboyHat</li>
+                    <li>Apparel_SimpleHelmet</li>
+                    <li>Apparel_PsychicFoilHelmet</li>
+                    <li>Apparel_TribalHeaddress</li>
+                    <li>Apparel_AuthorityCap</li>
+                    <li>Apparel_ArmorMarineHelmetPrestige</li>
+                    <li>Apparel_Blindfold</li>
+                    <li>Apparel_ArmorHelmetReconPrestige</li>
+                    <li>Apparel_ArmorHelmetRecon</li>
+                    <li>Apparel_PowerArmorHelmet</li>
+                    <li>Apparel_WarMask</li>
+                    <li>Apparel_VisageMask</li>
+                    <li>Apparel_EltexSkullcap</li>
+                    <li>Apparel_PsyfocusHelmet</li>
+                    <li>Apparel_WarVeil</li>
+                    <li>Apparel_CrownStellic</li>
+                    <li>Apparel_Tuque</li>
+                    <li>Apparel_Burka</li>
+                    <li>Apparel_Slicecap</li>
+                    <li>Apparel_Flophat</li>
+                    <li>Apparel_Broadwrap</li>
+                    <li>Apparel_Headwrap</li>
+                </blackApparelList>
+                <blackEndoCategories>
+                    <li>Melanin</li>
+                </blackEndoCategories>
+            </raceRestriction>
+        </alienRace>
+        <tools Inherit="False">
+            <li>
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Scratch</li>
+                </capacities>
+                <power>35</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>24</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Scratch</li>
+                </capacities>
+                <power>35</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>24</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.4</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.3</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <renderTree>Humanlike</renderTree>
+            <leatherDef>Leather_Sangheili</leatherDef>
+            <nameGenerator>NamerSangheiliMale</nameGenerator>
+            <nameGeneratorFemale>NamerSangheiliFemale</nameGeneratorFemale>
+            <ageGenerationCurve>
+                <points Inherit="False">
+                    <!-- longer lifespan requires custom curve -->
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,30)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(8,50)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,70)</li>                    <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+                    <li>(14,0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,90)</li>
+                    <li>(25,50)</li>
+                    <li>(75,100)</li>
+                    <li>(100,30)</li>
+                    <li>(125,5)</li>
+                    <li>(150,0)</li>
+                </points>
+            </ageGenerationCurve>
+            <bloodDef>FilthBloodSangheili</bloodDef>
+            <lifeExpectancy>150</lifeExpectancy>
+            <hediffGiverSets Inherit="False">
+                <li>OrganicStandard</li>
+            </hediffGiverSets>
+        </race>
+    </AlienRace.ThingDef_AlienRace>
+</Defs>

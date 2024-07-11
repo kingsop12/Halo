@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <XenotypeDef>
+        <defName>KigYarRace</defName>
+        <label>KigYar</label>
+        <description>TheKigYar race one of the many race apart of the Covneant.</description>
+        <descriptionShort>The KigYar race one of the many race apart of the Covneant.</descriptionShort>
+        <iconPath>UI/Xenotypes/UnggoyXenotypeSymbol</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>KigYarVoice</li>
+            <li>Body_Standard</li>
+        </genes>
+    </XenotypeDef>
+
+</Defs>

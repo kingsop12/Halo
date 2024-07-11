@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef>
+		<defName>CovenantFaction</defName>
+		<label>The Covenant</label>
+		<description>A Large linking of Covenant bases collectively owned by the Covenant Empire.</description>
+		<pawnsPlural>Covenant Citzen</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>The Arbiter</leaderTitle>
+		<settlementNameMaker>Covenant_NamerFactionBases</settlementNameMaker>
+		<factionNameMaker>Covenant_NamerFaction</factionNameMaker>
+		<factionIconPath>World/CovBase</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/CovBase</settlementTexturePath>
+                <permanentEnemy>false</permanentEnemy>
+		<techLevel>Ultra</techLevel>
+                <disallowedMemes>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+                </disallowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+		</requiredMemes>
+		<backstoryCategories>
+		    <li>SangheiliBackstory</li>
+                    <li>Offworld</li>
+                    <li>KigYarBackstory</li>
+		</backstoryCategories>
+		<allowedCultures>
+			<li>CovenateCulture</li>
+		</allowedCultures>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-20</min>
+			<max>85</max>
+		</allowedArrivalTemperatureRange>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		<raidLootValueFromPointsCurve>
+		  <points>
+			<li>(35,     15)</li>
+			<li>(100,   120)</li>
+			<li>(1000,  500)</li>
+			<li>(2000,  800)</li>
+			<li>(40000, 10000)</li>
+		  </points>
+		</raidLootValueFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>100</commonality>
+				<options>
+                                        <KigYarMinor>20</KigYarMinor>
+                                        <SkirmMinor>20</SkirmMinor>
+                                        <UnggoyMinor>20</UnggoyMinor>
+                                        <UnggoyMajor>10</UnggoyMajor>
+					<SangheiliMinor>10</SangheiliMinor>
+					<SangheiliMajor>20</SangheiliMajor>
+					<SangheiliSpecOps>3</SangheiliSpecOps>
+					<SangheiliUltra>5</SangheiliUltra>
+                                        <Arbiter>1</Arbiter>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>10</commonality>
+				<options>
+					<SangheiliSpecOps>10</SangheiliSpecOps>
+					<SangheiliUltra>5</SangheiliUltra>
+					<SangheiliGeneral>1</SangheiliGeneral>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>30</commonality>
+				<options>
+                                        <KigYarMinor>10</KigYarMinor>
+                                        <SkirmMinor>10</SkirmMinor>
+                                        <UnggoyMinor>10</UnggoyMinor>
+                                        <SangheiliRanger>15</SangheiliRanger>
+					<SangheiliUltra>6</SangheiliUltra>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>10</commonality>
+				<options>
+                                        <SangheiliSpecOps>13</SangheiliSpecOps>
+					<SangheiliZealot>1</SangheiliZealot>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>100</commonality>
+				<options>
+                                        <UnggoyMinor>20</UnggoyMinor>
+                                        <UnggoyMajor>15</UnggoyMajor>
+                                        <SangheiliMinor>10</SangheiliMinor>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>10</commonality>
+				<options>
+                                        <SkirmMinor>10</SkirmMinor>
+                                        <SangheiliUltra>10</SangheiliUltra>
+                                        <UnggoyUltra>10</UnggoyUltra>
+
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>10</commonality>
+				<options>
+                                        <KigYarMinor>20</KigYarMinor>
+                                        <SkirmMinor>20</SkirmMinor>
+                                        <SangheiliMinor>20</SangheiliMinor>
+                                        <UnggoyUltra>10</UnggoyUltra>
+                                        <UnggoySpecOps>15</UnggoySpecOps>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>50</commonality>
+				<options>
+                                        <SangheiliUltra>10</SangheiliUltra>
+                                        <UnggoyMinor>15</UnggoyMinor>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>70</commonality>
+				<options>
+                                        <UnggoyMinor>30</UnggoyMinor>
+					<SangheiliMinor>20</SangheiliMinor>
+					<SangheiliMajor>10</SangheiliMajor>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+                                <commonality>90</commonality>
+				<options>
+                                        <UnggoyMinor>30</UnggoyMinor>
+					<UnggoyMajor>20</UnggoyMajor>
+                                        <KigYarMinor>20</KigYarMinor>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<SangheiliTrader>1</SangheiliTrader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+				</carriers>
+				<guards>
+                                        <SangheiliHonorGuard>20</SangheiliHonorGuard>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+                                        <KigYarColnist>50</KigYarColnist>
+                                        <SkirmMinor>50</SkirmMinor>
+					<SangheiliMajor>20</SangheiliMajor>
+					<SangheiliUltra>11</SangheiliUltra>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+                                        <SkirmMinor>50</SkirmMinor>
+                                        <KigYarMinor>40</KigYarMinor>
+                                        <SangheiliHonorGuard>5</SangheiliHonorGuard>
+                                        <UnggoyMinor>50</UnggoyMinor>
+                                        <UnggoyMajor>35</UnggoyMajor>
+                                        <UnggoyUltra>30</UnggoyUltra>
+                                        <UnggoySpecOps>30</UnggoySpecOps>
+					<SangheiliMinor>40</SangheiliMinor>
+                                        <SangheiliRanger>40</SangheiliRanger>
+					<SangheiliMajor>25</SangheiliMajor>
+					<SangheiliUltra>20</SangheiliUltra>
+                                        <SangheiliZealot>20</SangheiliZealot>
+					<SangheiliSpecOps>15</SangheiliSpecOps>
+					<SangheiliGeneral>10</SangheiliGeneral>
+					<Arbiter>1</Arbiter>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		
+		<xenotypeSet Inherit="False">
+		<xenotypeChances>
+		<SangheiliRace>1</SangheiliRace>
+                <UnggoyRace>1</UnggoyRace>
+                <KigYarRace>1</KigYarRace>
+		</xenotypeChances>
+		</xenotypeSet>
+
+	</FactionDef>
+
+</Defs>

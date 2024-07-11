@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>CSD_Blueprint</defName>
+		<label>DX-Class Spirit Dropship</label>
+		<description>The Dextro xur-pattern troop carrier, designated by the UNSC as the Type-25 Troop Carrier, and otherwise known as the Spirit, is a Covenant infantry and logistical transport craft.</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		
+		<graphicData>
+			<texPath>DropShip/CSD</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<!-- <shaderType>CutoutComplexPattern</shaderType> -->
+			<drawSize>(9,9)</drawSize>
+			<!-- <drawOffsetEast>(-1, 0, 0)</drawOffsetEast>
+			<drawOffsetWest>(1, 0, 0)</drawOffsetWest> -->
+		</graphicData>
+		
+		<size>(7, 7)</size>
+		
+		<statBases>
+			<WorkToBuild>32000</WorkToBuild>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		
+		<researchPrerequisites>
+			<li>CSD_Research</li>
+		</researchPrerequisites>
+		
+		<costList>
+      			<Steel>2800</Steel>
+     			<Plasteel>1300</Plasteel>
+     			<Gold>500</Gold>
+			<Silver>10500</Silver>
+			<ComponentIndustrial>32</ComponentIndustrial>
+			<ComponentSpacer>9</ComponentSpacer>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<thingToSpawn>Cov_Spirits</thingToSpawn>
+	</Vehicles.VehicleBuildDef>
+</Defs>

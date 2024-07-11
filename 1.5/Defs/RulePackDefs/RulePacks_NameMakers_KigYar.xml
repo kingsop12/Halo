@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RulePackDef>
+		<defName>NamerKigYarMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KigYarNameMale] [KigYarNameLast]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>KigYarNameMale->KigYar_Names/KigYarMale</li>
+				<li>KigYarNameLast->KigYar_Names/KigYarlast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+  <RulePackDef>
+		<defName>NamerKigYarFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KigYarNameFemale] [KigYarNameLast]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>KigYarNameFemale->KigYar_Names/KigYarFemale</li>
+				<li>KigYarNameLast->KigYar_Names/KigYarlast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

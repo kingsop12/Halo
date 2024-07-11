@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseUnggoyPawnKind">
+    <race>Alien_Unggoy</race>
+    <combatPower>30</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseUnggoyPawnKind">
+    <defName>Unggoy</defName>
+    <label>Colonist</label>
+    <defaultFactionType>UnggoyPlayerColony</defaultFactionType>
+    <initialWillRange>1~3</initialWillRange>
+	<initialResistanceRange>11~18</initialResistanceRange>
+
+	<backstoryFilters>
+		<li>
+		<categories>
+			<li>Offworld</li>
+		</categories>
+		</li>
+	</backstoryFilters>
+	<apparelAllowHeadgearChance>100</apparelAllowHeadgearChance>
+    <apparelTags>
+          <li>UnggoyMask</li>
+    	  <li>UnggoyMinorArmor</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>10000</min>
+      <max>24000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</Defs>

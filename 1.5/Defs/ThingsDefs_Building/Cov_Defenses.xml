@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+   <!-- Covenant Barricade -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Covenany_Barricade</defName>
+    <label>Covenant Barricade</label>
+    <description>defense barrier, comprising a set of three armored panels.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Building/CovenantBarricade/CovenantBarricade</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>3,3</drawSize>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+ 
+    <size>(3,1)</size>
+    <uiIconPath>Building/CovenantBarricade/CovenantBarricade_south</uiIconPath>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>200</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.86</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <Plasteel>150</Plasteel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <Beauty>-5</Beauty>
+      <WorkToBuild>1000</WorkToBuild>
+
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <repairable>true</repairable>
+    </building>
+    <coversFloor>false</coversFloor>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Covenant_Tech</designationCategory>
+    <repairEffect>ConstructMetal</repairEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+
+    <researchPrerequisites>
+      <li>Covenant_Tech</li>
+    </researchPrerequisites>
+	
+    <comps>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+		
+  </ThingDef> 
+   
+  </Defs>

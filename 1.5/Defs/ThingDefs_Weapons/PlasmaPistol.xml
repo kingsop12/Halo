@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+  <!-- Plasma Pistol -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Plasma</defName>
+    <label>plasma</label>
+    <graphicData>
+		<texPath>Projectile/PlasmaPistolProjectile</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <drawSize>1.4</drawSize>
+    </graphicData>
+	<projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>30</speed>
+      <extraDamages>
+	      <li>
+		      <def>EMP</def>
+		      <amount>25</amount>
+                      <armorPenetration>1.0</armorPenetration>
+	      </li>
+	    </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>PlasmaPistol</defName>
+    <label>Type 25 Directed Energy Pistol.</label>
+    <description>Directed Energy Weapon</description>
+    <graphicData>
+		<texPath>Item/Equipment/WeaponRanged/PlasmaPistol</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.7</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>47500</WorkToMake>
+	  <Mass>2.4</Mass>
+	  <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+	  <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+      <Steel>30</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+	  <Plasteel>2</Plasteel>
+    </costList>
+	<recipeMaker>
+		<researchPrerequisite>Covenant_Tech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>CovenantWorkbench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<weaponTags>
+      <li>Cov_PlasmaPistol</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Plasma</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+		<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+		<burstShotCount>2</burstShotCount>
+        <range>22</range>
+        <soundCast>Plasma_Pistol_Shot</soundCast>
+		<soundCastTail>GunTail_Light</soundCastTail>
+		<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

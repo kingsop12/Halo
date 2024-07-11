@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<RulePackDef>
+    <defName>NamerUnggoy</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[UnggoyMale] [UnggoyFemale]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Unggoy_Name_Male</keyword>
+          <path>Unggoy_Names/UnggoyMale</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Unggoy_Name_Female</keyword>
+          <path>Unggoy_Names/UnggoyFemale</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Unggoy_Name_Last</keyword>
+          <path>Unggoy_Names/Unggoylast</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef> -->
+	
+	<RulePackDef>
+		<defName>NamerUnggoyMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[UnggoyNameMale] [UnggoyNameLast]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>UnggoyNameMale->Unggoy_Names/UnggoyMale</li>
+				<li>UnggoyNameLast->Unggoy_Names/Unggoylast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+  <RulePackDef>
+		<defName>NamerUnggoyFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[UnggoyNameFemale] [UnggoyNameLast]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>UnggoyNameFemale->Unggoy_Names/UnggoyFemale</li>
+				<li>UnggoyNameLast->Unggoy_Names/Unggoylast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

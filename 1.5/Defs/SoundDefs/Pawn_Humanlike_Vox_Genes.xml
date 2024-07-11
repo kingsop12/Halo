@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ====== Sangheili ====== -->
+
+	<SoundDef>
+		<defName>Sangheili_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Sangheili/Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+                                <repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Sangheili_Death</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Sangheili/Death</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Sangheili_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Sangheili/Wounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ====== Unggoy ====== -->
+
+	<SoundDef>
+		<defName>Unggoy_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Unggoy/Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+                                <repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Unggoy_Death</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Unggoy/Death</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Unggoy_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Unggoy/Wounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ====== KigYar ====== -->
+
+	<SoundDef>
+		<defName>KigYar_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/KigYar/Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+                                <repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>KigYar_Death</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/KigYar/Death</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>KigYar_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/KigYar/Wounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>11</volumeRange>
+				<pitchRange>0.8~0.95</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</Defs>

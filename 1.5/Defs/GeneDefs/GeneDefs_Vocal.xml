@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>SangheiliVoice</defName>
+		<label>Sangheili voice</label>
+		<description>Sangheili voice.</description>
+		<iconPath>UI/GeneIcons/SangheiliVoice</iconPath>
+		<displayOrderInCategory>125</displayOrderInCategory>
+		<soundCall>Sangheili_Call</soundCall>
+		<soundDeath>Sangheili_Death</soundDeath>
+		<soundWounded>Sangheili_Wounded</soundWounded>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>Sangheili</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>Sangheili</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>Elite</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>UnggoyVoice</defName>
+		<label>Unggoy voice</label>
+		<description>Unggoy Voice.</description>
+		<iconPath>UI/GeneIcons/UnggoyVoice</iconPath>
+		<displayOrderInCategory>125</displayOrderInCategory>
+		<soundCall>Unggoy_Call</soundCall>
+		<soundDeath>Unggoy_Death</soundDeath>
+		<soundWounded>Unggoy_Wounded</soundWounded>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>Unggoy</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>Unggoy</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>Grunt</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>KigYarVoice</defName>
+		<label>KigYar voice</label>
+		<description>KigYar Voice.</description>
+		<iconPath>UI/GeneIcons/UnggoyVoice</iconPath>
+		<displayOrderInCategory>125</displayOrderInCategory>
+		<soundCall>KigYar_Call</soundCall>
+		<soundDeath>KigYar_Death</soundDeath>
+		<soundWounded>KigYar_Wounded</soundWounded>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>KigYar</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>KigYar</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>KigYar</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

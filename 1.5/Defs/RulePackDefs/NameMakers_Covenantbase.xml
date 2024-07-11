@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>Covenant_NamerFactionBases</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->Covenant Outpost</li>
+				<li>name->Covenant Command Post</li>
+				<li>name->Covenant Relay</li>
+				<li>name->Covenant Citadel</li>
+				<li>name->Covenant Minibase</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
