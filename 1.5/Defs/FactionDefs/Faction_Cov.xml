@@ -189,7 +189,8 @@
 					<Muffalo>3</Muffalo>
 				</carriers>
 				<guards>
-                                        <SangheiliHonorGuard>20</SangheiliHonorGuard>
+                                        <SangheiliMinor>50</SangheiliMinor>
+                                        <SangheiliRanger>50</SangheiliRanger>
 				</guards>
 			</li>
 			<li>
